@@ -1,0 +1,91 @@
+JENKINS
+
+recap on ci cd
+
+continous deployment you cannot choose 
+continouse delivery you can choose if you would deploy or not
+
+what is jenkins
+- an open source continous integration tool
+- it is written in java
+- can execute apche and and apache maven shell scripts window batch commands
+- supports common scm tools subversion, git and clearcase
+- a server based system running in a servlet continer such as apache tomcat
+
+apche tomcat is a web server handles war files
+infastructure set up of jenkins
+1. developers check their source code
+2. jenkins will pick up the changed source code and trigger a build
+3. the build output will be available in the jenkins dash board
+   notification can send to automation
+
+
+poll scm update the very first for example there are two file
+ at 1:44 and 1:45 the 1:44 WILL BE UPDATED FIRST
+
+
+Terminologies
+for build trend if sum of build is 10 summary is succesful
+clouds even ratio
+rain or lightning majority is failed
+
+
+general terms for jenkins
+
+- agent is typically a machine or container which connects to a 
+jenkins master and executes task when directed by the master
+
+- build result of a single execution of a project
+
+- downstream a configured pipeline or project which is triggered as part
+ of the execution of a seperate pipeline or project
+
+- executor number of concurrent builds that can happen on that build
+
+- folder an organizational container for pipelines and/or 
+  projects similar to folder on a file system
+
+- item an entity in the web UI corresponding to either a folder pipeline or
+  project
+
+- job project a user configured description of work which 
+  jenkins should perfom such as building a piece of software
+
+- master the central coordinating which stores 
+  configuration all installation files and plugins
+
+- node is the machine master and agents are nodes
+
+- pipeline a user difined model of a continous delivery of 
+  pipeline for more read the pipeline
+
+- plugin an extension to jenkins functionally provide 
+  seperately from jenkins core
+
+- upstream a configured pipeline or project which triggers a seperate pipeline or project as part of its execution
+
+- workspace a disposable directory on the file system of a node where work can be done by a pipeline or project
+  workspaces are typically left in place after a build or pipeline run completes unless specific workspace cleanup policies have been put in 
+  place on the jenkins master
+
+
+
+jobs build and scm
+
+- step a single task fundamentally steps tell jenkins what to do inside of a pipeline or project
+
+- trigger a criteria for triggering a new pipeline run or build
+
+- artifact an immutable file generated during a build or pipeline run which is archived onto the jenkins master for later retrieval by user
+
+- repository the scm system where the code to be built lives for [centralize one copy] [distributed all users can have the file]
+
+
+jenkins on sonarqube
+
+click add sonarqube
+
+server version 5.3 or higher
+server auth token sa sonar qube
+no fill up on sonar qube pass and account login
+go to advance no need to fill then save if there are sonarqube

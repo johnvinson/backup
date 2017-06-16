@@ -1,0 +1,4 @@
+SELENIUM is for testing automation
+
+selenium suit
+- selenium IDE(integrated development environment)

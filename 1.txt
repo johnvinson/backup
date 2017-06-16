@@ -1,0 +1,6 @@
+- name get tomcat status
+  shell: service tomcat status
+  register: tomcat_status
+
+-debug:
+  var: tomcat_status

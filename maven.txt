@@ -1,0 +1,41 @@
+maven
+
+mvn archetype:generate
+
+Parameter: groupId, Value: com.dcsbootcamp.maven
+[INFO] Parameter: artifactId, Value: simple-webapp
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.dcsbootcamp.maven
+[INFO] Parameter: packageInPathFormat, Value: com/dcsbootcamp/maven
+[INFO] Parameter: package, Value: com.dcsbootcamp.maven
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: groupId, Value: com.dcsbootcamp.maven
+[INFO] Parameter: artifactId, Value: simple-webapp
+
+
+
+building the project
+- validate
+- compile
+- test
+- package
+- install
+- deploy
+
+mvn package on the targat folder should create a jar or war file
+
+mvn install
+
+adding dependency
+a dependency is simply a way of expressing that the current project
+
+
+
+building a project site
+
+mvn archtype:create Dgroup=org.sonatype.mavenbook 
+DartifactID=sample-project 
+
+mvn site:run
+
+mvn site-deploy for deployment of app

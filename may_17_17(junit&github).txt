@@ -1,0 +1,54 @@
+github and gitlab
+
+features of github
+- collaboration
+- code review
+- project management
+- integrations
+- community management
+- documentaion
+- code hosting
+- serious security
+
+git lab is a repository manager
+
+features 
+- projects and groups
+- ppermissions
+- gitlab pages
+- file locking
+- wiki
+- unlimited public and private repos
+- project importing
+- protected branch
+- code snippets
+- powerful API's
+
+GITHUB vs GITLAB
+
+- authentication levels
+- attachments
+- issue tracking
+- work in progress status
+- integrations
+
+git and junit integration with jenkins
+
+jenkins is an open source automation server written in java
+
+git is a version control system for tracking changes in computer 
+files and coordinating work on those files among people
+
+unit testing (manual test and automated)
+
+
+jUnit is a unit testing framework for the java programming language
+
+features of junit
+- use for writing and running test
+- allow you to write code faster
+- is simple and less time
+- it can be run automatically and they check their own result
+- shows test progress in a bar that is green if the test is running smoothly
+ 
+

@@ -1,0 +1,51 @@
+continous integration and continous delivery
+
+3 main factors for bridging dev and ops
+
+- configuration management on how we hold of codes/ monitor or review 
+our codes
+
+- application lifestle management deployment and building and packing of 
+codes for excetable 
+
+- enviroment man developing environment
+
+tooling all 3 main blocks
+
+dcsc devlopment control system capability
+
+sdlc cycle
+
+plan code build test release deploy operate
+
+agile pcd 
+continous integ pcdt
+
+continous integ - is a development practice that requires developers to 
+integrate code into a shared repository several times
+
+continous deployment - the release of production of software that 
+passes the automated test
+
+devops tools
+- scm software configuration management and safely storing of saoftwares
+  code review and testing configuration on project
+
+- orchestration main tool is jenkins integration of 
+  different tools to facilitate devops
+
+-  automated quality assurance the continuum of testing and monitoring
+
+source control management (scm) main tool git
+- is a discipline comprising the tools and techniques which is used to manage
+change to its software assets
+- maintains code history
+- compare version and cahnges
+- ability to merge changes
+
+orchestration
+- builds can be integrated and deployed more frequently
+- continous integration workflow
+
+automated qa sonarqube
+- code analysis 

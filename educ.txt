@@ -1,0 +1,22 @@
+notes on unix system administration
+rlogin and rsh are not safe to connect to next machine
+
+ssh for same execution of command
+putty for connecting to instances
+
+
+how to make a nex folder
+
+vagrant init hashicorp/precise32; vagrant up --provider virtual box
+
+
+scp (secure copy) same as cp or copy
+lynx 
+wget 
+
+
+groups
+
+to remove from group gpasswd -d bert camp
+groupdel delete group
+userdel delete user

@@ -1,0 +1,122 @@
+Docker
+
+what is docker
+an open source OS-level virtualization manager
+
+
+
+
+docker components
+- docker images
+- docker containers
+- docker registries
+
+docker best practices
+
+1. containers should be ephemeral
+-it can be stopped and destroyed and a new one is build
+
+2. use a .dockerignorefile
+-for efficiency during build use to exclude files or directories
+
+3. avoid installing unnecessary packages
+
+4.run olny one process per container
+
+5. minimize the number of layers
+
+6. sort multi line arguments
+
+7. build cache
+
+
+docker features
+
+- file system isolation
+- resource isolation
+- network isolation
+- copy-on-write
+- logging
+- change management
+- interactive shell
+
+
+
+docker
+build - compose application without worrying about inconsistencies between
+environments and locking into any platform or language
+ship - design an application 
+
+why docker
+
+agility - quickly respond to change
+control - enables developers to control from infrastructure to apllication
+portability - transfer or distribute application from personal computer
+to a team to private infrastructure
+
+docker uses cases
+CI/CD - enable developers to develop and test applications more quickly 
+within any environment
+
+
+container a basic version of the linux operating system
+image software that you load into a container
+docker tells your system to use the docker program
+run subcommand that will create and run a docker container
+
+how to create docker file
+
+FROM docker/whalesay:latest
+
+RUN apt-get update && apt-get-install -y fortunes
+
+CMD /usr/games/fortune -a | cowsay
+on how to build docker file
+do
+docker build -t docker-whale .
+
+to run file 
+docker run dockerfile
+
+
+
+
+
+docker file instructions
+
+FROM must be the first instruction in order to specify the base image
+	FROM <image>:<tag>
+MAINTAINER allows you to set the author field of the image
+	MAINTAINER <name>
+WORKDIR sets the working directory for any run cmd entry point copy 
+and add commands that follow it in the dockerfile
+	WORKDIR </path/to/directory>
+USER sets the user name or UID to use when running the image and for any RUN CMD and entrypoint
+	USE <username>
+ARG defines a variable that users can pass during a docker build using the
+build-arg<varname>=<value>
+	ARG <name>[=<default value>]
+ENV sets an environment variable for the image
+	ENV<key>=<value>
+ADD adds new files directories or remote file URLS into 
+the filesystem of the container
+	ADD <src><dest>
+
+dest is an absolute path or relative to a workdir
+
+
+
+RUB executes a command in a new layer on top of a current image
+	RUN<command>
+
+Expose makes the container list on the specified port during runtime
+	EXPOSE <port>
+
+ENTRYPOINT allows you to configure a container that will run as an executable
+	ENTRYPOINT ["executable","param1","param2"]
+	ENTRYPOINT command param1 param2
+
+CMD provides defaults for an executing container
+	CMD ["executable","pram1","param2"] (exec form)
+	CMD ["param1","param2"] (as params to entrypoint)
+CMD command param1 param2

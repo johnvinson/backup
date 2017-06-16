@@ -1,0 +1,43 @@
+sonarqube
+
+sonarqube - is an open source code quality management tool that allows
+	    managing tracking and improving source
+
+features of sonarqube
+
+
+
+code viewer
+
+
+
+codes for sonarqube
+
+StartSonar.bat on bin and windows 86 64 bit
+
+
+
+how to use auth token on sonarqube to coordinate to jenkins
+go to admin then go to user then click the token put name and generate token
+
+this is the toke copy it 
+
+ba7303dd9c1b1651a5c76cb7c72631d02cd4f8fa
+
+for admin
+
+b96e223bf6b765da6ecb5d720f025ea56ac938ab
+
+
+CODE ANALYSIS
+
+#Application infromation
+sonar.projectKey=WebAppCalcu
+sonar.projectVersion=$CUSTOM_BUILD_ID
+sonar.projectName=Web App Calcu
+
+#Sonar configuration
+sonar.web.url=http://localhost:9000
+
+#path to source directories
+sonar.sources=WebAppCalcu\WebContent\*

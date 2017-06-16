@@ -1,0 +1,115 @@
+ANSIBLE- configuration management deployment and orchestration tool
+
+written in python
+agentless
+design with simplicity in mind
+-main purpose is consistency
+
+ANSIBLE CONCEPTS
+
+Inventory - 
+Ad-hoc commands -
+MOdules
+playbooks
+
+docs.ansible.com
+
+
+ad hoc commands
+
+ansible <pattern> -a <arguments>
+
+on pattern target user name of host if sudo true or false
+
+ansible <pattern> -m <module_name> -a <atguments>
+
+ansible target_machine -a "echo hello"
+
+modules
+help you code play books
+Idempotent - consistent output
+Core and extras
+example modules:aws, docker,shell.yum
+
+
+playbooks
+
+Define in YAML
+contain many plays
+run with ansible-playbook
+
+playbooks features
+variable templates (jinja2)
+handlers
+if condition
+forloops
+
+demo
+write a playbook
+
+
+
+sudo apt-get update -y && apt-get upgarde -y
+
+openssh-client/openssh-server
+Control machine leys should be allowed to ssh tp target machines
+sshpass
+ansible
+apt list --installed | grep openssh
+ansible-playbook -i host playbook.yml -Kks -u name of users
+
+
+hosts: targetmachines
+sudo: true
+user: prov_admin
+tasks: ..
+
+	name: Install NGINX
+	apt:
+		name: nginx
+		state: present
+
+vagrant init ubuntu/trusty64
+ssh-keygen
+ssh -i get key -p 2222 vagrant 
+ssh name of the vagrant@theping
+adduser name
+ssh-copy-id name of user @ ipadd
+sudo apt-get install ansible sshpass -y
+
+
+steps on ansible
+
+create a virtual box vagrant init ubuntu/trusty64
+then edit vagrat file remove comment of ip 
+then vagrant up
+then vagrant ssh
+if vagrant ssh didnt work use this codes
+
+- ssh -i location of the privatekey -p ports 
+
+sudo su
+
+adduser testuser sudo
+su testuser
+vi /etc/ssh/sshd_config
+sudo apt-get install ansible -y
+got to the directory of ansible cd /etc/ansible
+sudo mv hosts hosts-bckup
+sudo vim hosts
+[target]
+then the ip add
+
+ansible target -a "hostname" -Kks -u testuser
+absent uninstall latest nstall update:wq
+
+
+uptime
+
+http://media.comicbook.com/2017/02/attack-on-titan-opening-230355.jpg
+
+ansible target -m setup -Kks -u testuser
+-a "filter
+
+uptime |awk '{print $1}' | cut -f2 -d":"
+register: uptime_val

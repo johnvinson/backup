@@ -1,0 +1,17 @@
+javac -cp .:
+/c/Users/john.vinson.g.bayani/Desktop/
+selenium-server-standalone-3.4.0.jar SeleniumSample.java
+
+
+
+
+
+java -cp .:
+/c/Users/john.vinson.g.bayani/Desktop/
+selenium-server-standalone-3.4.0.jar SeleniumSample
+
+
+
+
+ java -jar selenium-server-standalone-3.4.0.jar  
+-role hub -port 4421

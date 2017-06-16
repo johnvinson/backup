@@ -1,0 +1,105 @@
+GIT basics
+
+- Snapshots, Not differences
+- Nearly every operation is local
+- git has integrity
+- git generally only adds data
+- the three states
+
+
+- snapshots = it only links to the next version of the files that has no 
+	      no changes
+
+
+
+sections of git project
+
+working directory --> staging area --> local repository --> remote repository
+
+git goals and benefits
+- speed
+- simple design
+- strong support for nonliear development
+- fully distribute
+- able to handle large projects like the linux kernel efficiently
+- controlled branching
+- better synchronization
+
+GIT limitation
+
+- usage complexity
+- repository permissions
+- unmodifiable history
+- locks
+- updating very large repositories
+- no revision numbers
+
+three states of git
+
+committed - means that the data is safely stored in your local database
+
+modified - means that you have changed the file but have not 
+	   committed it to your database yet
+
+staged - means that you have marked a modified file in its current
+	 version to go into your next commit snapshot
+
+
+accenture bitbucket (git hosted repository)
+
+click projects for public projects
+
+
+
+simulation
+
+make a folder bootcamp-server
+/c/Users/john.vinson.g.bayani/Documents/repositories/bootcamp-server
+then git init --bare
+ls -lrta
+make another file bootcamp-server-nobare
+then git init
+make a folder working-copy
+enter working copy
+git clone
+then git init enter boot-campserver
+type git config --global user.email "john.vinson.g.bayani@accenture.com
+git config --global user.name "vinson bayani"
+touch vinson.txt
+
+note git add -A all repositories is added
+git status to check all files that is commited
+git add <file name>
+
+to delete once it is in stagin area git rm --cached <file>
+
+git commit -m "Initial commit"
+
+git push --set-upstream origin master
+
+git remote -v
+
+
+
+/c/Users/john.vinson.g.bayani/Documents/repositories/bootcamp-server local-bootcamp2
+
+comit the second file
+
+
+
+note 
+for ssh it is already on unix
+
+for http it needs and apche
+
+for http you have a user credential
+
+for ssh need an ssh key its a key that is recognizable by server
+
+git log -p to show the functions in each git 
+
+
+important notes do not git clone on a master folder
+
+git rebase HEAD~1 for change commit history
+git revert HEAD~23 used the current commit or on top
